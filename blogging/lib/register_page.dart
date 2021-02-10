@@ -73,12 +73,6 @@ class Register extends StatelessWidget {
     final inputConfirmPassword = Padding(
       padding: EdgeInsets.only(bottom: 10),
       child: TextFormField(
-        // validator: (value) {
-        //   if (value.isEmpty) {
-        //     return '* Required';
-        //   }
-        //   return null;
-        // },
         validator: RequiredValidator(errorText: "* Required"),
         obscureText: true,
         decoration: InputDecoration(
